@@ -1,0 +1,9 @@
+.venv
+.idea
+.env
+__pycache__/
+mlruns/
+mlartifacts/
+saved_models/
+transformers/
+*.log
