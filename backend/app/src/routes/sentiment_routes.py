@@ -17,7 +17,6 @@ nlp = spacy.load("en_core_web_md")
 # Set similarity threshold for aspect presence
 SIMILARITY_THRESHOLD = 0.4
 
-# Create a Flask Blueprint
 sentiment_bp = Blueprint("sentiment", __name__)
 
 def is_aspect_present(aspect: str, sentence: str) -> bool:

@@ -1,0 +1,20 @@
+# Stage 1: Development Environment for React
+FROM node:22-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --legacy-peer-deps
+
+# Copy the rest of the application source code
+COPY . .
+
+# Expose the development server port
+EXPOSE 8080
+
+# Start the React development server
+CMD ["npm", "run", "dev"]

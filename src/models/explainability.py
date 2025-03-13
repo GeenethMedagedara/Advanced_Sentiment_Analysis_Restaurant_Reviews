@@ -33,10 +33,6 @@ class ABSAExplainability:
     def _predict_proba(self, texts):
         """Helper function to get probability outputs for SHAP."""
         print(f"Received texts: {texts}")
-        
-        # Use the stored input text if it's set
-        # if self.the_input_text is not None:
-        #     texts = self.the_input_text
             
         processed_texts = [self.the_input_text if "[MASK]" in text else text for text in texts]
         print(f"Processed texts: {processed_texts}")

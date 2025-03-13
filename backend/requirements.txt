@@ -4,3 +4,10 @@ transformers
 shap
 lime
 gunicorn
+flask_cors
+sentence-transformers
+spacy
+matplotlib
+seaborn
+python-dotenv
+mlflow

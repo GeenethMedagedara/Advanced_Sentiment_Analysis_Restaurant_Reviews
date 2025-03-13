@@ -14,7 +14,7 @@ echo "🚀 Running Jupyter Notebook training..."
 papermill "$NOTEBOOK" "$OUTPUT_NOTEBOOK" > "$LOG_FILE" 2>&1
 
 if [ $? -eq 0 ]; then
-    echo "✅ Training completed successfully!"
+    echo "Training completed successfully!"
 else
-    echo "❌ Training failed. Check logs: $LOG_FILE"
+    echo "Training failed. Check logs: $LOG_FILE"
 fi

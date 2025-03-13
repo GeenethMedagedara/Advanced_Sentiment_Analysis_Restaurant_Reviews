@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from src.models.model_loader import explainer  # Import the ABSAExplainability instance
+from src.models.model_loader import explainer  
 
 explain_bp = Blueprint("explain", __name__)
 

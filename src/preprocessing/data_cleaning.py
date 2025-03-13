@@ -63,7 +63,7 @@ def clean_text(text):
     text = re.sub(r'<span class=" raw__09f24__T4Ezm" lang="en">', '', text)
     text = re.sub(r'</span>', '', text)
     text = re.sub(r'<br>', '', text)
-    text = re.sub(r'\\', '', text)  # Remove backslash
+    text = re.sub(r'\\', '', text)
     return text
 
 class TextRatingCleaning(DataCleaningStrategy):

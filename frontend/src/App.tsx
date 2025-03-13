@@ -7,7 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:4000/api";
+axios.defaults.baseURL = "http://host.docker.internal:4000/api";
+// axios.defaults.baseURL = "http://localhost:4000/api";
 axios.defaults.withCredentials = true;
 
 const queryClient = new QueryClient();
