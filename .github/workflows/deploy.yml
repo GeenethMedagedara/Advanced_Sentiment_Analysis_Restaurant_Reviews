@@ -27,7 +27,8 @@ jobs:
     - name: Build and Push Docker Images
       run: |
         PROJECT_ID=${{ secrets.GCP_PROJECT_ID }}
-        REPO=us-central1-docker.pkg.dev/$PROJECT_ID/sentiment-repo
+        REPO=us-central1-docker.pkg.dev/absa-sentiment-analysis-452007/sentiment-repo
+        
 
         # Build and push Flask backend
         docker build -t $REPO/flask-api:latest -f ./backend/Dockerfile.flask .
