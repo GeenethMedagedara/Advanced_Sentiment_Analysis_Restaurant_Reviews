@@ -1,0 +1,29 @@
+# Use official Python image
+FROM python:3.10
+
+# Set working directory
+WORKDIR /app
+
+# Copy all directories (including pipelines/)
+COPY . /app/
+
+# Create a virtual environment inside the container
+RUN python -m venv .venv
+
+# Activate the virtual environment and install dependencies
+RUN .venv/bin/pip install --no-cache-dir -r requirements.txt
+
+# Install the spaCy model inside the virtual environment
+RUN .venv/bin/python -m spacy download en_core_web_md  
+
+# Install the spaCy model 2 inside the virtual environment
+RUN .venv/bin/python -m spacy download en_core_web_sm
+
+# Download SentenceTransformer model inside the virtual environment
+RUN .venv/bin/python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('paraphrase-MiniLM-L6-v2')"
+
+# Install the IPython kernel for Jupyter
+RUN .venv/bin/python -m ipykernel install --user --name=.venv --display-name "Python (.venv)"
+
+# Change directory to pipelines and run the script using the virtual environment
+CMD ["bash", "-c", "cd pipelines && ../.venv/bin/python predict_pipeline.py"]

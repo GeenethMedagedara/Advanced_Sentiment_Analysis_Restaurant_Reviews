@@ -1,0 +1,13 @@
+models/
+tests/
+scripts/
+explainability.ipynb
+modeling.ipynb
+mlflow/
+k8s/
+frontend/
+backend/
+.venv/
+.idea/
+.github/
+__pycache__/

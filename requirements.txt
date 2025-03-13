@@ -1,0 +1,13 @@
+apscheduler
+scrapy
+seaborn
+matplotlib
+pandas
+spacy
+sentence-transformers
+jupyter
+ipykernel
+bertopic
+pymongo
+mlflow
+python-dotenv
