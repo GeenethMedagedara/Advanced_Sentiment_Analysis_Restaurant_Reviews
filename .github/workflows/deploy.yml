@@ -30,15 +30,15 @@ jobs:
         REPO=us-central1-docker.pkg.dev/$PROJECT_ID/sentiment-repo
 
         # Build and push Flask backend
-        docker build -t $REPO/flask-api:latest -f Dockerfile.flask .
+        docker build -t $REPO/flask-api:latest -f ./backend/Dockerfile.flask .
         docker push $REPO/flask-api:latest
 
         # Build and push React frontend
-        docker build -t $REPO/frontend:latest -f Dockerfile.react .
+        docker build -t $REPO/frontend:latest -f ./frontend/Dockerfile.react .
         docker push $REPO/frontend:latest
 
         # Build and push MLflow
-        docker build -t $REPO/mlflow:latest -f Dockerfile.mlflow .
+        docker build -t $REPO/mlflow:latest -f ./mlflow/Dockerfile.mlflow .
         docker push $REPO/mlflow:latest
 
         # Build and push Prediction Pipeline
