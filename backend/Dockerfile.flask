@@ -15,7 +15,7 @@ RUN python -m spacy download en_core_web_md
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('paraphrase-MiniLM-L6-v2')"
 
 # Copy the rest of the application
-COPY app/ .
+COPY . .
 
 # Set environment variables
 ENV FLASK_APP=app.py
