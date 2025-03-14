@@ -20,14 +20,19 @@ jobs:
       with:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
 
+    - name: Install gke-gcloud-auth-plugin
+      run: |
+        gcloud components install gke-gcloud-auth-plugin
+        echo "export USE_GKE_GCLOUD_AUTH_PLUGIN=True" >> ~/.bashrc
+        source ~/.bashrc
+
     - name: Configure Docker for Artifact Registry
       run: |
         gcloud auth configure-docker us-central1-docker.pkg.dev
 
     - name: Build and Push Docker Images
       run: |
-        PROJECT_ID=${{ secrets.GCP_PROJECT_ID }}
-        REPO=us-central1-docker.pkg.dev/absa-sentiment-analysis-452007/sentiment-repo
+        REPO=us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sentiment-repo
         
 
         # Build and push Flask backend
@@ -50,11 +55,17 @@ jobs:
       run: |
         gcloud container clusters get-credentials ${{ secrets.GKE_CLUSTER_NAME }} --region ${{ secrets.GKE_REGION }}
 
+    - name: Verify Kubernetes cluster access
+      run: kubectl get nodes
+
     - name: Deploy to GKE
       run: |
         kubectl apply -f k8s/
+        sleep 20  # Allow some time for the pods to start
 
     - name: Verify Deployment
       run: |
         kubectl get pods
         kubectl get services
+        kubectl describe deployments
+    
