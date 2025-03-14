@@ -35,7 +35,7 @@ jobs:
         docker push $REPO/flask-api:latest
 
         # Build and push React frontend
-        docker build -t $REPO/frontend:latest -f ./frontend/Dockerfile.react .
+        docker build -t $REPO/frontend:latest -f ./frontend/Dockerfile.react ./frontend
         docker push $REPO/frontend:latest
 
         # Build and push MLflow
