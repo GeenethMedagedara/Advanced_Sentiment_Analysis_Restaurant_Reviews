@@ -15,8 +15,9 @@ A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real use
 ## Features
 
 - **Aspect-Based Sentiment Analysis (ABSA)** – Extracts sentiments on specific topics in reviews.
-- **Fine-tuned BERT Model** – Trained on custom datasets for high accuracy.
-- **Topic Modeling with LDA/BERT** – Identifies key themes in reviews.
+- **Fine-tuned BERT Model** – Trained on custom datasets for aspect based sentiment analysis.
+- **Enhanced aspect and sentiment understanding** - Used multiple review aspect understanding methods for high accuracy.
+- **Schedulers and Scraping** – Scrapes customer reviews periodically.
 - **MLflow Model Tracking** – Logs experiments for model performance comparisons.
 - **Scalable Deployment** – Deployed on Google Cloud (GCP) with Kubernetes.
 - **CI/CD with GitHub Actions** – Automated testing & deployment.
