@@ -78,4 +78,8 @@ data
 ```
 Click OK → Load into Power BI
 
+## Screenshots
+
+Power BI
+
 ![Screenshot 2025-03-15 235922](https://github.com/user-attachments/assets/d1d478e7-74e6-43a9-ab2c-e63843f41d6e)
