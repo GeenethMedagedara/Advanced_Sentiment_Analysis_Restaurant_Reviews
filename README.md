@@ -11,7 +11,7 @@ A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real use
 - [Features](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#features)
 - [Tech Stack](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#tech-stack)
 - [Installation](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#installation)
-- [How This Works]()
+- [How This Works](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#how-this-works)
 - [Screenshots](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#screenshots)
 
 ## Features
