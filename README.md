@@ -11,6 +11,7 @@ A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real use
 - [Features](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#features)
 - [Tech Stack](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#tech-stack)
 - [Installation](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#installation)
+- [How This Works]()
 - [Screenshots](https://github.com/GeenethMedagedara/Advanced_Sentiment_Analysis_Restaurant_Reviews/blob/master/README.md#screenshots)
 
 ## Features
@@ -78,8 +79,19 @@ data
 ```
 Click OK → Load into Power BI
 
+## How This Works
+
+
 ## Screenshots
 
 Power BI
 
 ![Screenshot 2025-03-15 235922](https://github.com/user-attachments/assets/d1d478e7-74e6-43a9-ab2c-e63843f41d6e)
+
+Mlflow model evaluation matrix
+
+![Screenshot 2025-03-16 005933](https://github.com/user-attachments/assets/6f5269c7-777f-42a1-89c7-9e5f776ea610)
+
+![Screenshot 2025-03-16 010004](https://github.com/user-attachments/assets/c102c540-27e6-4a30-b6ab-5b3b4c7bed11)
+
+![Screenshot 2025-03-16 010026](https://github.com/user-attachments/assets/56176ac4-f92c-4452-a77c-8127894730bc)
