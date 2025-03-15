@@ -1,5 +1,9 @@
 # Advanced Sentiment Analysis of Product Reviews
 
+![Screenshot 2025-03-16 000947](https://github.com/user-attachments/assets/28675adf-b087-4b65-9e17-548413637810)
+
+---
+
 A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real user reviews and extracts opinions/sentiments from the reviews using NLP and deep learning technics.
 
 ## Table of Contents
@@ -75,3 +79,5 @@ data.drop(columns=["_id"], inplace=True, errors="ignore")
 data
 ```
 Click OK → Load into Power BI
+
+![Screenshot 2025-03-15 235922](https://github.com/user-attachments/assets/d1d478e7-74e6-43a9-ab2c-e63843f41d6e)
