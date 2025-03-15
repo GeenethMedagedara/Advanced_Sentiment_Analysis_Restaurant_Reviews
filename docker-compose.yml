@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  mlflow:
+    build:
+      context: ./mlflow
+      dockerfile: Dockerfile.mlflow
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+
+  flask-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.flask
+    container_name: flask-api
+    ports:
+      - "4000:4000"
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=app.py
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    depends_on:
+      mlflow:
+        condition: service_started
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.react
+    container_name: frontend
+    ports:
+      - "8080:8080"
+    depends_on:
+      flask-api:
+        condition: service_started
+
+  prediction-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile.predictpipeline
+    container_name: prediction-pipeline
+    depends_on:
+      frontend:
+        condition: service_started
