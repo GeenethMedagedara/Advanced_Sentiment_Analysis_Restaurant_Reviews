@@ -11,7 +11,7 @@ A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real use
 - Features
 - Tech Stack
 - Installation
-- License
+- Screenshots
 
 ## Features
 
