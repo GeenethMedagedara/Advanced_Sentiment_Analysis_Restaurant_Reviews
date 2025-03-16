@@ -125,6 +125,11 @@ Click OK → Load into Power BI
 
 > **MongoDB** is a type of No-SQL database which is good in high-volume data storage.
 
+## Why This is Built
+
+I built this project to gain an understanding of building a full-on end-to-end ML project, ML pipelines, and utilizing pre-trained NLP models and advanced sentiment classifications, and also understanding about building custom transformer-based architectures, implementing ML tracking, and also to gain a base-level understanding of modern visualization tools such as Power BI.
+
+
 ## Screenshots
 
 Power BI
