@@ -113,6 +113,18 @@ Click OK → Load into Power BI
 
 > Finally, I used the spacy word embeddings and Sentence Transformers to detect the correct aspects and used the pre-trained BERT model to get the sentiment. This increased the ABSA accuracy of the project.
 
+---
+
+> **Scrapy** is a fast high-level web crawling and web scraping framework, used to crawl websites and extract structured data from their pages.
+ 
+> **Apscheduler** is a library in Python that allows you to schedule and execute tasks at a specific time
+
+> **MLflow** is an open source platform for managing machine learning workflows which is used by MLOps teams and data scientists. I used it mainly for model tracking and storage.
+
+> Microsoft **Power BI** is a data visualization and reporting platform. I used it for visualizing the insights of the sentiment predicted user reviews.
+
+> **MongoDB** is a type of No-SQL database which is good in high-volume data storage.
+
 ## Screenshots
 
 Power BI
