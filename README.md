@@ -1,4 +1,4 @@
-# Advanced Sentiment Analysis of Product Reviews
+![Screenshot 2025-03-16 112117](https://github.com/user-attachments/assets/1eb05135-30ee-48b8-a1e0-8762ca6de2f4)# Advanced Sentiment Analysis of Product Reviews
 
 ![Screenshot 2025-03-16 000947](https://github.com/user-attachments/assets/28675adf-b087-4b65-9e17-548413637810)
 
@@ -116,3 +116,7 @@ Mlflow model evaluation matrix
 ![Screenshot 2025-03-16 010004](https://github.com/user-attachments/assets/c102c540-27e6-4a30-b6ab-5b3b4c7bed11)
 
 ![Screenshot 2025-03-16 010026](https://github.com/user-attachments/assets/56176ac4-f92c-4452-a77c-8127894730bc)
+
+Mongo DB database with saved dataset
+
+![Screenshot 2025-03-16 112117](https://github.com/user-attachments/assets/95653943-d951-4fec-b45e-61b584e96601)
