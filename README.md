@@ -54,7 +54,24 @@ docker-compose up --build
 http://localhost:8080
 ```
 
-4. Loaded the predicted dataset to Power BI for visualization
+4. Change hyperparameters (Optional)
+
+sentiment-analysis-project -> src -> models -> fine_tune.py
+
+![Screenshot 2025-03-16 065632](https://github.com/user-attachments/assets/bb364ba2-2272-4282-bdf7-8225c4e9ffee)
+
+5. Train model by running the modeling.ipynb
+
+Mlflow docker container must be active !
+
+![Screenshot 2025-03-16 070436](https://github.com/user-attachments/assets/0a7c93fa-cce0-443c-8dff-9ee771db630b)
+
+6. Restart all the other docker containers
+
+- Watch the predict pipeline run automaticlly and the sentiment predicted dataset will be save in mongoDB
+- Add custom inputs using the UI
+
+7. Loaded the predicted dataset to Power BI for visualization
 
 Within Power BI go to **Home -> Transform Data -> Python Script**
 Enter the following code
