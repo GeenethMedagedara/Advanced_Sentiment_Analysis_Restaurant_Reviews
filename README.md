@@ -12,7 +12,7 @@ A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real use
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [How This Works](#how-this-works)
-- [Why Built](#)
+- [Why Built](#why-this-is-built)
 - [Screenshots](#screenshots)
 
 ## Features
@@ -148,3 +148,11 @@ Mlflow model evaluation matrix
 Mongo DB database with saved dataset
 
 ![Screenshot 2025-03-16 112117](https://github.com/user-attachments/assets/95653943-d951-4fec-b45e-61b584e96601)
+
+Google Cloud Artifact Registry
+
+![Screenshot 2025-03-16 235938](https://github.com/user-attachments/assets/d0aaffbf-1199-4326-8926-531bf57be9e8)
+
+Google Cloud Kubernetes Engine
+
+![Screenshot 2025-03-17 000629](https://github.com/user-attachments/assets/5add1252-e3cd-4119-9578-986591b7a080)
