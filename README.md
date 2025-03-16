@@ -98,6 +98,10 @@ Click OK → Load into Power BI
 
 ## How This Works
 
+- **React frontend** acts as the UI for the user to imput the custom reviews along with the user prefered aspect
+- **Flask backend** acts as the api that handels all the requests and connects with mlflow to load the model
+- **Mlflow** acts as a storage to store the trained models along with the evaluation metrics
+- **Predict Pipeline** does all the work. When activated, first the model will be loaded from **Mlflow**, the scheduled pipeline will not start unless the model is loaded. Then the **Scrapy** web scraper scrapes the user reviews periodically using a scheduler called **APScheduler**, and then the scraped data is stored within the files as a CSV. Then EDA.ipynb is called to perform basic EDA along with basic data cleaning. Then preprocessing.ipynb is called to perform more data cleaning and preprocessing before predicting the sentiments.  Then predict.ipynb is called to predict the sentiments. Then the dataset with the predicted sentiments will be stored in MongoDB.
 
 ## Screenshots
 
