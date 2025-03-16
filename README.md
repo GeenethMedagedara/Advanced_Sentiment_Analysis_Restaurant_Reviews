@@ -4,7 +4,7 @@
 
 ---
 
-A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real user reviews and extracts opinions/sentiments from the reviews using NLP and deep learning technics.
+A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real user reviews and extracts opinions/sentiments from the reviews using NLP and deep learning techniques and then saves the data in a cloud database for later use to visualize and gain insights about the state of the business.
 
 ## Table of Contents
 
@@ -68,13 +68,13 @@ Mlflow docker container must be active !
 
 6. Restart all the other docker containers
 
-- Watch the predict pipeline run automaticlly and the sentiment predicted dataset will be save in mongoDB
+- Watch the predict pipeline run automatically and the sentiment predicted dataset will be saved in mongoDB
 - Add custom inputs using the UI
 
 7. Loaded the predicted dataset to Power BI for visualization
 
 Within Power BI go to **Home -> Transform Data -> Python Script**
-Enter the following code
+Enter the following code along with your credentials
 
 ```python
 import pandas as pd
@@ -98,8 +98,8 @@ Click OK → Load into Power BI
 
 ## How This Works
 
-- **React frontend** acts as the UI for the user to imput the custom reviews along with the user prefered aspect.
-- **Flask backend** acts as the api that handels all the requests and connects with mlflow to load the model.
+- **React frontend** acts as the UI for the user to input the custom reviews along with the user preferred aspect.
+- **Flask backend** acts as the api that handles all the requests and connects with mlflow to load the model.
 - **Mlflow** acts as a storage to store the trained models along with the evaluation metrics.
 - **Predict Pipeline** does all the work. When activated, first the model will be loaded from **Mlflow**, the scheduled pipeline will not start unless the model is loaded. Then the **Scrapy** web scraper scrapes the user reviews periodically using a scheduler called **APScheduler**, and then the scraped data is stored within the files as a CSV. Then EDA.ipynb is called to perform basic EDA along with basic data cleaning. Then preprocessing.ipynb is called to perform more data cleaning and preprocessing before predicting the sentiments.  Then predict.ipynb is called to predict the sentiments. Then the dataset with the predicted sentiments will be stored in MongoDB. (Meanwhile all the logs will be saved in the logs directory)
 
