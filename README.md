@@ -106,9 +106,12 @@ Click OK → Load into Power BI
 ---
 
 > **BERT** is a transformer-based model designed for contextual word representations which understands words in relation to their surroundings, making it powerful for Aspect-Based Sentiment Analysis (ABSA). 
-> **spaCy** is a lightweight NLP library used for efficient text preprocessing. I used this to tokenize the text and used the space word similarity to pinpoint the correct aspect names.
+
+> **spaCy** is a lightweight NLP library used for efficient text preprocessing. I used this to tokenize the text and used the spacy word similarity to pinpoint the correct aspect names.
+
 > **Sentence Transformers (SBERT)** generate dense vector embeddings that capture semantic similarity between sentences. I used this to convert reviews into embeddings to compare aspect sentiment across different reviews.
-> Finally I used the spacy word embeddings and Sentence Transformers to detect the correct aspects and used the pre-trained BERT model to get the sentiment. This increased the ABSA accuracy of the project.
+
+> Finally, I used the spacy word embeddings and Sentence Transformers to detect the correct aspects and used the pre-trained BERT model to get the sentiment. This increased the ABSA accuracy of the project.
 
 ## Screenshots
 
