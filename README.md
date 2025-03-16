@@ -1,4 +1,4 @@
-![Screenshot 2025-03-16 112117](https://github.com/user-attachments/assets/1eb05135-30ee-48b8-a1e0-8762ca6de2f4)# Advanced Sentiment Analysis of Product Reviews
+# Advanced Sentiment Analysis of Product Reviews
 
 ![Screenshot 2025-03-16 000947](https://github.com/user-attachments/assets/28675adf-b087-4b65-9e17-548413637810)
 
