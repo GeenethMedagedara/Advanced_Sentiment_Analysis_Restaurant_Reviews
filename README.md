@@ -16,7 +16,7 @@ A full-stack Aspect-Based Sentiment Analysis (ABSA) system that scrapes real use
 
 ## Features
 
-- **Aspect-Based Sentiment Analysis (ABSA)** – Extracts sentiments on specific topics in reviews.
+- **Aspect-Based Sentiment Analysis (ABSA)** – Extracts sentiments on specific aspects in reviews.
 - **Fine-tuned BERT Model** – Trained on custom datasets for aspect based sentiment analysis.
 - **Enhanced aspect and sentiment understanding** - Used multiple review aspect understanding methods for high accuracy.
 - **Schedulers and Scraping** – Scrapes customer reviews periodically.
@@ -102,6 +102,13 @@ Click OK → Load into Power BI
 - **Flask backend** acts as the api that handles all the requests and connects with mlflow to load the model.
 - **Mlflow** acts as a storage to store the trained models along with the evaluation metrics.
 - **Predict Pipeline** does all the work. When activated, first the model will be loaded from **Mlflow**, the scheduled pipeline will not start unless the model is loaded. Then the **Scrapy** web scraper scrapes the user reviews periodically using a scheduler called **APScheduler**, and then the scraped data is stored within the files as a CSV. Then EDA.ipynb is called to perform basic EDA along with basic data cleaning. Then preprocessing.ipynb is called to perform more data cleaning and preprocessing before predicting the sentiments.  Then predict.ipynb is called to predict the sentiments. Then the dataset with the predicted sentiments will be stored in MongoDB. (Meanwhile all the logs will be saved in the logs directory)
+
+---
+
+> **BERT** is a transformer-based model designed for contextual word representations which understands words in relation to their surroundings, making it powerful for Aspect-Based Sentiment Analysis (ABSA). 
+> **spaCy** is a lightweight NLP library used for efficient text preprocessing. I used this to tokenize the text and used the space word similarity to pinpoint the correct aspect names.
+> **Sentence Transformers (SBERT)** generate dense vector embeddings that capture semantic similarity between sentences. I used this to convert reviews into embeddings to compare aspect sentiment across different reviews.
+> Finally I used the spacy word embeddings and Sentence Transformers to detect the correct aspects and used the pre-trained BERT model to get the sentiment. This increased the ABSA accuracy of the project.
 
 ## Screenshots
 
