@@ -1,3 +1,7 @@
+"""
+Handles requests for sentiment analysis of reviews.
+"""
+
 from flask import Blueprint, request, jsonify
 import torch
 import torch.nn.functional as F

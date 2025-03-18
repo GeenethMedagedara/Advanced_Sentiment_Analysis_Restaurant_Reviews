@@ -1,3 +1,7 @@
+"""
+Handles all explainability routes.
+"""
+
 from flask import Blueprint, request, jsonify
 from src.models.model_loader import explainer  
 

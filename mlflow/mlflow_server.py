@@ -1,3 +1,7 @@
+"""
+Handles the starting of the MLflow server.
+"""
+
 import os
 
 MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"

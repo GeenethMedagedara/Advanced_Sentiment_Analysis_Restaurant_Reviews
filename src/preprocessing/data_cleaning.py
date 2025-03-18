@@ -1,3 +1,7 @@
+"""
+Handles the data cleaning of the Yelp reviews using different strategies.
+"""
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import re

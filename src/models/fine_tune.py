@@ -1,3 +1,7 @@
+"""
+Handles fine-tuning of BERT model for Aspect-Based Sentiment Analysis (ABSA)
+"""
+
 from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
 from torch.utils.data import Dataset
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support

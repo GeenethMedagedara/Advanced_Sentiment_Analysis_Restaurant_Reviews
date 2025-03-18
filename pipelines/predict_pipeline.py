@@ -1,3 +1,7 @@
+"""
+Handles the automation of the prediction pipeline.
+"""
+
 import os
 import subprocess
 import logging

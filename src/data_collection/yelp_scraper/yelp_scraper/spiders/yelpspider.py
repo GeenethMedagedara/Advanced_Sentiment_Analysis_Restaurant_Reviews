@@ -1,3 +1,7 @@
+"""
+Handles the scraping of Yelp reviews for a given URL.
+"""
+
 import scrapy
 import logging
 import os

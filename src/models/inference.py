@@ -1,3 +1,7 @@
+"""
+Handles the tracking uri for mlflow
+"""
+
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 import torch.nn.functional as F

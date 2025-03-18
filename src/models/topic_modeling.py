@@ -1,3 +1,7 @@
+"""
+Handles the topic modeling of reviews using different strategies.
+"""
+
 from abc import ABC, abstractmethod
 from bertopic import BERTopic
 from umap import UMAP

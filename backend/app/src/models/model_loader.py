@@ -1,3 +1,7 @@
+"""
+Handles loading the BERT model and tokenizer, and instantiates the ABSAExplainability class.
+"""
+
 import os
 import logging
 from transformers import BertTokenizer

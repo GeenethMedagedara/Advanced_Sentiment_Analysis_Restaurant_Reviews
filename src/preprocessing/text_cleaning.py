@@ -1,3 +1,7 @@
+"""
+Handles text cleaning operations using different strategies.
+"""
+
 import re
 import spacy
 

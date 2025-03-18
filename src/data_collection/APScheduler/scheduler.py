@@ -1,3 +1,7 @@
+"""
+Handles scheduling of the Yelp scraper using APScheduler.
+"""
+
 import os
 import subprocess
 import logging

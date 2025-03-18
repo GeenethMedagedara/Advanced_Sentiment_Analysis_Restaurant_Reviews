@@ -1,3 +1,7 @@
+"""
+Handles the connection to the MongoDB database.
+"""
+
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv

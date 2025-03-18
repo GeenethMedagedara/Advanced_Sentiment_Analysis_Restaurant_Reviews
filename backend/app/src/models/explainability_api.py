@@ -1,3 +1,7 @@
+"""
+Handles explainability for aspect-based sentiment analysis models.
+"""
+
 import matplotlib
 matplotlib.use('Agg')  # Use non-GUI backend
 

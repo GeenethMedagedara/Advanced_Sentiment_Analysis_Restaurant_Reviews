@@ -1,3 +1,7 @@
+"""
+Handles explainability for the ABSA model.
+"""
+
 import torch
 import shap
 import lime.lime_text

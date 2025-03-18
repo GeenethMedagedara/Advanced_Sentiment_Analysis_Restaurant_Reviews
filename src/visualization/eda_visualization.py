@@ -1,3 +1,7 @@
+"""
+Handles the text cleaning operations using different strategies.
+"""
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt

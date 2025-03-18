@@ -1,3 +1,7 @@
+"""
+Handles the evaluation of fine-tuned models using different strategies.
+"""
+
 from abc import ABC, abstractmethod
 import matplotlib.pyplot as plt
 import seaborn as sns
